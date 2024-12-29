@@ -1,0 +1,70 @@
+html
+    head 
+        title This is title 
+        style 
+            include ../static/style.css
+    body 
+        nav#navbar.top  
+            ul 
+                div#logo 
+                    img(src="/static/img/logo.png")
+                    | HDA
+                li #[a(href="/") Home]
+                li #[a  About ]
+                li #[a  Services ]
+                li #[a  Class Info ]
+                li #[a(href="/contact")  Contact Us ]
+
+        Section#introSection 
+                div HARRYS DANCE ACADEMY 
+                div.small EAT SLEEP DANCE REPEAT 
+                //- img(src="/static/img/danceBasanti.png")
+        Section#missionSection 
+            h2 Our Mission 
+            div.card 
+                h3 Dance perfection
+                div.card-box
+                    div.card-img
+                        img(src="/static/img/111.png")
+                    .card-content 
+                        p You dance love, and you dance joy, and you dance dreams
+            div.card 
+                h3 Dance the way you like
+                .card-box 
+                    .card-img 
+                        img(src="/static/img/222.png")
+                    .card-content 
+                        p Dancing is like dreaming with your feet
+            div.card 
+                h3 Expert teaching
+                .card-box 
+                    .card-img 
+                        img(src="/static/img/333.png")
+                    .card-content 
+                        p Any kind of dancing is better than no dancing
+        Section#sponsorSection
+            h2 Our Sponsors 
+            #sponsors 
+                img(src="/static/img/logo1.png",alt="sponsor image",class="spImage")
+                img(src="/static/img/logo2.png",alt="sponsor image",class="spImage")
+                img(src="/static/img/logo3.png",alt="sponsor image",class="spImage")
+                img(src="/static/img/logo4.png",alt="sponsor image",class="spImage")
+        footer#footer 
+            |copyright(C) 2019 HarryDanceAcademy.com | All rights reserved
+        script 
+        include ../static/index.js
+    
+
+//- <!DOCTYPE html>
+//- <html lang="en>
+//- <head>
+//-    <meta charset="utf-8">
+//- <meta name="viewport" content="width=device-width, initial-scale=1.0">
+//- <title>#{title}</title>
+//- style 
+//-     include ../static/style.css
+//- </head>
+//- <body>
+//-     <h1> Hello sir </h1>
+//- </body>
+//- </html>
